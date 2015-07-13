@@ -23,19 +23,14 @@ class unit():
         self.STRup = STRup
         self.INTup = INTup
         self.DEFup = DEFup
-    
-    def usespell(spellNum): #needs work, maybe just can it for hardcoded spells?
-        target = raw_input ("Select target: ")
-        sVIT -= spelllist[spellselect].sVIT
-        sstr -= spelllist[spellselect].sstr
-        sint -= spelllist[spellselect].sint
-        main[target].sdef -= spelllist[spellselect].sdef
-        main[target].sSTAM -= spelllist[spellselect].sSTAM
-        main[target].sSPD -= spelllist[spellselect].sSPD
-        main[target].sstun -= spelllist[spellselect].sstun
-        main[target].sdrain -= spelllist[spellselect].sdrain
-        main[target].sbind -= spelllist[spellselect].sbind
-        main[target].smute -= spelllist[spellselect].smute
+
+    def levelUp(self):
+        self.level++
+        self.xp = 0 #in theory right? wait shit what about overflow Joe questions.jpg
+        self.VIT += VITup
+        self.STR += STRup
+        self.INT += INTup
+        self.DEF += DEFup 
 
 class party():
     def __init__(self, A, B, C, D): #create a party and assign to it
