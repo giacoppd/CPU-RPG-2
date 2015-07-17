@@ -31,6 +31,8 @@ def instance(userparty, baddyparty):
 				q.put(person)
 		for person in q:
 			q.get()
+			action = int(raw_input("What do you want to do?"))
+			#execute action
 			
 		
 	
