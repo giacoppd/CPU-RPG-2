@@ -43,6 +43,10 @@ class unit():
 			drainD--
 		if muteD > 0:
 			muteD --
+	def takeaction(i):
+		if i == 1:
+			attack(int(raw_input("Who do you want to attack? ")))
+
 
 class party():
     def __init__(self, A, B, C, D): #create a party and assign to it
