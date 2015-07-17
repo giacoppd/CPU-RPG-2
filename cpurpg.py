@@ -9,6 +9,7 @@ class unit():
         self.level = level
 	self.name = name
         self.xp = xp
+		self.HP = VIT
         self.VIT = VIT
         self.STR = STR
         self.INT = INT
@@ -31,6 +32,8 @@ class unit():
         self.STR += STRup
         self.INT += INTup
         self.DEF += DEFup 
+	def attack(target):
+		target.HP -= (self.STR - target.DEF)
 
 class party():
     def __init__(self, A, B, C, D): #create a party and assign to it
