@@ -25,22 +25,12 @@ def instance(userparty, baddyparty):
 	allpeeps.partylist = deepcopy(userparty.partylist)
 	allpeeps.partylist.append(baddyparty.partylist)
 	sorted(allpeeps.partylist, key=spd, reverse=TRUE)
-	for person in allpeeps.partylist:
-		if person.spd == 6:
-			if x == 0 or x == 1 or x == 4 or x == 6 or x == 8 or x == 11:
+	while true:
+		for person in allpeeps.partylist:
+			if x % (60 / person.spd) == 0:
 				q.put(person)
-		else if person.spd == 5:
-			if x == 0 or x == 2 or x == 5 or x == 7 or x == 10:
-				q.put(person)
-		else if person.spd == 4:
-			if x % 3 == 0:
-				q.put(person)
-		else if person.spd == 3:
-			if x % 4 == 0:
-				q.put(person)
-		else if person.spd == 2:
-			if x % 6 == 0:
-				q.put(person)
-	for person in q:
-		q.get()
+		for person in q:
+			q.get()
+			
+		
 	
