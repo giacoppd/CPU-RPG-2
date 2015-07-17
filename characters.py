@@ -1,7 +1,9 @@
 class Dominic(unit):
     charge
     def __init__(self):
-    self.charge = 1
+        #self, name, level, xp, VIT, STR, INT, DEF, STAM, SPD, VITup, STRup, INTup, DEFup
+        super(Dominic, self).__init__(self, "Dominic", 1, 0, 90, 5, 5, 5, 10, 4, 10, 2, 2, 2)
+        self.charge = 1
     def focus(self):
         charge += 1
     def gattle(enemyParty, pos):
@@ -16,6 +18,7 @@ class Dominic(unit):
              enemyParty[3].HP -= 30*charge
         else
              print "How did this happen to me???? Dom gattle"
+        charge = 1
     def chen(self, userParty):
         for p in userParty:
             p.HP += (50 + self.STR + self.INT)
