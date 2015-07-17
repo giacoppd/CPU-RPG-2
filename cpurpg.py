@@ -34,6 +34,19 @@ class unit():
         self.DEF += DEFup 
 	def attack(target):
 		target.HP -= (self.STR - target.DEF)
+	def debuffdown():
+		if bindD > 0:
+			bindD--
+		if stunD > 0:
+			stunD--
+		if drainD > 0:
+			drainD--
+		if muteD > 0:
+			muteD --
+	def takeaction(i):
+		if i == 1:
+			attack(int(raw_input("Who do you want to attack? ")))
+
 
 class party():
     def __init__(self, A, B, C, D): #create a party and assign to it
