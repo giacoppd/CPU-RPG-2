@@ -77,10 +77,10 @@ class Nick(unit):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Nick, self).__init__(self, "Nick", 1, 0, 60, 5, 6, 5, 10, 6, 10, 1, 1, 1)
     def takeaction(self, i): #nick has double move, is self even needed idk I wish I could compile
-        x = 0
-        while (x < 2):
             super(Nick, self).takeaction(i)
-            ++x
+            #TODO reprompt for input here
+            #i = input()
+            super(Nick, self).takeaction(i)
     def blitz(self, target):
         target.HP -= ((self.STR + 30) - target.DEF)
         super(Nick, self).useSTAM(4)
@@ -95,4 +95,44 @@ class Nick(unit):
         self.drainD = 0
         self.muteD = 0
         super(Nick, self).useSTAM(10)
+
+class Kath(unit):
+    fort = False
+
+    def __init__(self):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Kath, self).__init__(self, "Katherine", 1, 0, 70, 7, 7, 7, 10, 4, 10, 2, 2, 2)
+    
+    def totem(self, enemyParty):
+        for e in enemyParty:
+            e.stunD = 2
+        self.stunD = 2
+        self.drainD = 2
+        super(Kath, self).useSTAM(10)
+
+    def obliteration(self, enemyParty):
+        DMG = (self.HP // 2) #damage is floored with the //
+        for e in enemyParty:
+            e.HP -= DMG
+        self.HP -= DMG
+        super(Kath, self).useSTAM(10)
+    
+    def uniPurge(self, userParty):
+        for u in userParty:
+            u.stunD = 0
+            u.bindD = 0
+            u.muteD = 0
+            u.drainD = 0
+        self.drainD = 9999
+        self.stunD = 9999 #big numbers so she's down for the count
+        super(Kath, self).useSTAM(10)
+   
+   def fortressT(self): #TODO ask joe about how to toggle and if can be purged
+        if(self.fort == False):
+           self.fort == True
+           self.bindD = 9999
+           self.DEF = (self.DEF*2)
+        elif(self.fort == True):
+           self.fort == False
+           self.DEF = (self.DEF / 2)
     
