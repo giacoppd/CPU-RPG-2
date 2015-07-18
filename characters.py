@@ -1,12 +1,11 @@
 from cpurpg import *
 
 class Dominic(unit):
-    charge
+    charge = 1
     def __init__(self):
         #self, name, level, xp, VIT, STR, INT, DEF, STAM, SPD, VITup, STRup, INTup, DEFup
         super(Dominic, self).__init__(self, "Dominic", 1, 0, 90, 5, 5, 5, 10, 4, 10, 2, 2, 2)
-        self.charge = 1
-    def stunPurge(self)
+    def stunPurge(self):
         self.stunD = 0
     def focus(self):
         charge += 1
@@ -17,11 +16,11 @@ class Dominic(unit):
              enemyParty[1].HP -= 30*charge
              enemyParty[2].HP -= 30*charge
              enemyParty[3].HP -= 30*charge
-        else if (pos == 2):
+        elif (pos == 2):
              enemyParty[1].HP -= 50*charge
              enemyParty[2].HP -= 30*charge
              enemyParty[3].HP -= 30*charge
-        else
+        else:
              print "How did this happen to me???? Dom gattle"
         charge = 1
         super(Dominic, self).useSTAM(8)
@@ -45,7 +44,7 @@ class Yong(unit):
         for p in partyList:
             p.STAM += 3
         super(Yong, self).useSTAM(13)
-    def bodyTrans(target)
+    def bodyTrans(target):
         self.HP -= 50
         target.HP += 5*self.STR
         if(target.HP > target.VIT):
@@ -73,8 +72,27 @@ class Haley(unit):
         enemyParty[1].HP -= (2*self.STR + 15 - enemyParty[1].DEF)    
         super(Haley, self).useSTAM(3)
 
-
-
-        
-
+class Nick(unit):
+    def __init__(self):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Nick, self).__init__(self, "Nick", 1, 0, 60, 5, 6, 5, 10, 6, 10, 1, 1, 1)
+    def takeaction(self, i): #nick has double move, is self even needed idk I wish I could compile
+        x = 0
+        while (x < 2):
+            super(Nick, self).takeaction(i)
+            ++x
+    def blitz(self, target):
+        target.HP -= ((self.STR + 30) - target.DEF)
+        super(Nick, self).useSTAM(4)
+    def rally(self, target):
+        target.STAM += 4
+        if (target.STAM > 10):
+            target.STAM = 10
+        super(Nick, self).useSTAM(4)
+    def stretch(self):
+        self.stunD = 0
+        self.bindD = 0
+        self.drainD = 0
+        self.muteD = 0
+        super(Nick, self).useSTAM(10)
     
