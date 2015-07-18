@@ -128,6 +128,7 @@ class Kath(unit):
         super(Kath, self).useSTAM(10)
    
    def fortressT(self): #TODO ask joe about how to toggle and if can be purged
+        super(Kath, self).useSTAM(6)
         if(self.fort == False):
            self.fort == True
            self.bindD = 9999
