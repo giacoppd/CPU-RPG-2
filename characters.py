@@ -6,6 +6,8 @@ class Dominic(unit):
         #self, name, level, xp, VIT, STR, INT, DEF, STAM, SPD, VITup, STRup, INTup, DEFup
         super(Dominic, self).__init__(self, "Dominic", 1, 0, 90, 5, 5, 5, 10, 4, 10, 2, 2, 2)
         self.charge = 1
+    def stunPurge(self)
+        self.stunD = 0
     def focus(self):
         charge += 1
         super(Dominic, self).useSTAM(6)
@@ -37,7 +39,7 @@ class Yong(unit):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Yong, self).__init__(self, "Yongwoon", 1, 0, 150, 10, 6, 0, 10, 5, 30, 3, 1, 0)
     def graniteKick(target):
-        target.HP -= (5*self.STR - target.def)
+        target.HP -= (5*self.STR - target.DEF)
         super(Yong, self).useSTAM(10)
     def bloodTrans(partyList):
         for p in partyList:
@@ -48,6 +50,29 @@ class Yong(unit):
         target.HP += 5*self.STR
         if(target.HP > target.VIT):
             target.HP = target.VIT
+        super(Yong, self).useSTAM(5)
+
+class Haley(unit): 
+    def __init__(self):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Haley, self).__init__(self, "Haley", 1, 0, 55, 5, 7, 9, 10, 5, 10, 1, 1, 2)
+    def drainPurge(self):
+        self.drainD = 0
+    def unravel(self):
+        self.bindD = 0
+        super(Haley, self).useSTAM(3)
+    def dash(self, enemyParty):
+        for e in enemyParty:
+            e.HP -= (2*self.STR + 10 - e.DEF)    
+        super(Haley, self).useSTAM(5)
+    def mountainChisel(self, target):
+        target.HP -= (4*(3*self.STR + 15) - target.DEF)
+        super(Haley, self).useSTAM(10)
+    def whirlKick(self, enemyParty):
+        enemyParty[0].HP -= (2*self.STR + 15 - enemyParty[0].DEF)    
+        enemyParty[1].HP -= (2*self.STR + 15 - enemyParty[1].DEF)    
+        super(Haley, self).useSTAM(3)
+
 
 
         
