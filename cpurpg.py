@@ -9,7 +9,7 @@ class unit():
         self.level = level
 	self.name = name
         self.xp = xp
-		self.HP = VIT
+        self.HP = VIT
         self.VIT = VIT
         self.STR = STR
         self.INT = INT
@@ -25,8 +25,13 @@ class unit():
         self.INTup = INTup
         self.DEFup = DEFup
 
+    def useSTAM(amount):
+        self.STAM -= amount
+        if (self.STAM < 0):
+            self.STAM = 0
+    
     def levelUp(self):
-        self.level++
+        ++self.level
         self.xp = 0 #in theory right? wait shit what about overflow Joe questions.jpg
         self.VIT += VITup
         self.STR += STRup
@@ -36,13 +41,13 @@ class unit():
 		target.HP -= (self.STR - target.DEF)
 	def debuffdown():
 		if bindD > 0:
-			bindD--
+			--bindD
 		if stunD > 0:
-			stunD--
+			--stunD
 		if drainD > 0:
-			drainD--
+			--drainD
 		if muteD > 0:
-			muteD --
+			--muteD
 	def takeaction(i):
 		if i == 1:
 			attack(int(raw_input("Who do you want to attack? ")))
