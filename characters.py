@@ -1,15 +1,15 @@
 from cpurpg import *
 
-class Dominic(unit):
+class Dom(unit):
     charge = 1
     def __init__(self):
         #self, name, level, xp, VIT, STR, INT, DEF, STAM, SPD, VITup, STRup, INTup, DEFup
-        super(Dominic, self).__init__(self, "Dominic", 1, 0, 90, 5, 5, 5, 10, 4, 10, 2, 2, 2)
+        super(Dom, self).__init__(self, "Dominic", 1, 0, 90, 5, 5, 5, 10, 4, 10, 2, 2, 2)
     def stunPurge(self):
         self.stunD = 0
     def focus(self):
         charge += 1
-        super(Dominic, self).useSTAM(6)
+        super(Dom, self).useSTAM(6)
     def gattle(enemyParty, pos):
         if (pos == 1):
              enemyParty[0].HP -= 50*charge
@@ -23,14 +23,14 @@ class Dominic(unit):
         else:
              print "How did this happen to me???? Dom gattle"
         charge = 1
-        super(Dominic, self).useSTAM(8)
+        super(Dom, self).useSTAM(8)
     def chen(self, userParty):
         for p in userParty:
             p.HP += (50 + self.STR + self.INT)
             if (p.HP > p.VIT):
                 p.HP = p.VIT
         self.drainD = 3
-        super(Dominic, self).useSTAM(10)
+        super(Dom, self).useSTAM(10)
         
 
 class Yong(unit):
