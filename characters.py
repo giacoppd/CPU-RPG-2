@@ -272,7 +272,29 @@ class Ulri(unit):
         super(Ulri, self).useSTAM(10)
         self.HP -= (self.VIT * .7) // 1 #cheater's floor func, why import when you can just //?
 
-
-        
+class Morgan(unit):
+   
+    def __init__(self, userParty):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Morgan, self).__init__(self, "Morgan", 1, 0, 70, 7, 7, 5, 10, 3, 10, 1, 2, 1)
+        self.duo = False
+        self.duoCheck(userParty)
+    def duoCheck(self, userParty):
+        self.duo = False
+        for u in userParty:
+            if(u.name == "Rachel"):
+                self.duo = True
+                self.SPD += 2
+                #Bind immune?
+    def danceKnives(self, target):
+        target.HP -= (5*(self.STR + 10) - target.DEF)
+        super(Morgan, self).useSTAM(5)
+    def danceDazzle(self, enemyParty):
+        for e in enemyParty:
+            e.HP -= 40
+        enemyParty[0].stunD = 1
+        super(Morgan, self).useSTAM(5)
+    def danceDeath(self, enemyParty, userParty, roster):
+            #TODO do we check for rachel in here or somewhere else?
 
 
