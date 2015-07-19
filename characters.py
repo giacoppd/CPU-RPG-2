@@ -118,9 +118,9 @@ class Kath(unit):
 
     def totem(self, enemyParty):
         for e in enemyParty:
-            e.stunD = 2
-        self.stunD = 2
-        self.drainD = 2
+            e.stunD += 2
+        self.stunD += 2
+        self.drainD += 2
         super(Kath, self).useSTAM(10)
 
     def obliteration(self, enemyParty):
@@ -244,6 +244,35 @@ class Natasha(unit):
     def gungirCombo(self, target):
         target.HP -= ((8*(2*self.STR + 10) - target.DEF))
         super(Natasha, self).useSTAM(10)
-    
+
+class Ulri(unit):
+   
+    def __init__(self):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Ulri, self).__init__(self, "Ulri", 1, 0, 75, 6, 6, 5, 10, 3, 10, 2, 2, 3)
+        self.phD = 0 #phalanx duration
+
+    def trueStrike(self, target):
+        target.HP -= 2*(self.STR + self.INT)
+        super(Ulri, self).useSTAM(5)
+
+    def phalanx(self, target, toggle): #0 = on cast, 1 = purge buff
+        if(toggle == 0):
+            target.bindD += 4
+            self.DEF += 10
+            self.phD = 4
+            super(Ulri, self).useSTAM(5)
+        elif(toggle == 1):
+            self.DEF -= 10
+            self.phD = 0
+   
+    def oblation(self, userParty):   
+        for u in userParty:
+            u.gainSTAM(10)
+        super(Ulri, self).useSTAM(10)
+        self.HP -= (self.VIT * .7) // 1 #cheater's floor func, why import when you can just //?
+
+
+        
 
 
