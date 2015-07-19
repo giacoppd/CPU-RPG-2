@@ -29,6 +29,16 @@ class unit():
         self.STAM -= amount
         if (self.STAM < 0):
             self.STAM = 0
+
+    def gainSTAM(amount):
+        self.STAM += amount
+        if (self.STAM > 10):
+            self.STAM = 10    
+    
+    def heal(amount):
+        self.HP += amount
+        if (self.HP > self.VIT):
+            self.HP = self.VIT  
     
     def levelUp(self):
         ++self.level

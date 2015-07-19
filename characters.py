@@ -136,4 +136,29 @@ class Kath(unit):
         elif(self.fort == True):
            self.fort == False
            self.DEF = (self.DEF / 2)
+class JennyK(unit):
+    block = False
+
+    def __init__(self):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(JennyK, self).__init__(self, "Jenny Kim", 1, 0, 85, 7, 6, 6, 10, 3, 10, 2, 2, 1)
+
+    def blockT(self):
+        block = True
+        super(JennyK, self).useSTAM(3)
     
+    def piercingKick(self, target):
+        target.HP -= ((2*self.STR + 2*self.INT) - target.DEF) #Row reduction?
+        super(JennyK, self).useSTAM(4)
+
+    def ROTCDrill(self, tiarget):
+        target.gainSTAM(5)
+        super(JennyK, self).useSTAM(5)
+    
+    def artOfDeath(self, target):
+        dmg = (target.VIT - target.HP)
+        target.HP -= dmg
+        super(JennyK, self).useSTAM(10)
+
+    
+
