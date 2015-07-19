@@ -1,5 +1,7 @@
 from cpurpg import *
-
+#TODO Bad positional input return false shit
+#jenny C emboss?
+#buffsss???????????
 class Dom(unit):
 
     def __init__(self):
@@ -156,7 +158,8 @@ class JennyK(unit):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(JennyK, self).__init__(self, "Jenny Kim", 1, 0, 85, 7, 6, 6, 10, 3, 10, 2, 2, 1)
         self.block = False
-    def blockT(self):
+    
+    def block(self):
         self.block = True
         super(JennyK, self).useSTAM(3)
     
@@ -202,7 +205,7 @@ class JennyC(unit):
         else:
             print "How did this happen to me? jennyC remove"
 
-    def emboss(self, userParty, toggle): #0 = on, 1 = off
+    def emboss(self, userParty): #0 = on, 1 = off
         if(toggle == 0):
             amount = self.DEF
         elif(toggle == 1):
@@ -218,18 +221,20 @@ class Natasha(unit):
         super(Natasha, self).__init__(self, "Natasha", 1, 0, 105, 8, 5, 6, 10, 3, 20, 3, 2, 1)
         self.qD = 0
         self.qStack = 0
-    def qigong(self, toggle): #0 = use, 1 = reset
-        if(toggle == 0):
+    
+    def debuffdown():
+		super(Natasha, self).debuffdown()
+		if (qD > 0):
+			qD -= 1
+			if(qD == 0):
+			    self.DEF -= self.qStack*2
+                self.qStack = 0
+    
+    def qigong(self):
             self.DEF += 2
             self.qStack += 1
             self.qD += 3
             super(Natasha, self).useSTAM(3)
-        elif(toggle == 1):
-            self.DEF -= self.qStack*2
-            self.qD = 0
-            self.qStack = 0
-       else:
-           print "How did this happen to me? Natasha qigong"
 
     def unrefinedKick(self, target):
         amount = ((3*self.STR + 10) - target.DEF) 
@@ -251,21 +256,24 @@ class Ulri(unit):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Ulri, self).__init__(self, "Ulri", 1, 0, 75, 6, 6, 5, 10, 3, 10, 2, 2, 3)
         self.phD = 0 #phalanx duration
-
+    
+    def debuffdown():
+		super(Ulri, self).debuffdown()
+		if (phD > 0):
+			phD -= 1
+			if(phD == 0):
+			    self.DEF -= DEF
+			
     def trueStrike(self, target):
         target.HP -= 2*(self.STR + self.INT)
         super(Ulri, self).useSTAM(5)
 
-    def phalanx(self, target, toggle): #0 = on cast, 1 = purge buff
-        if(toggle == 0):
-            target.bindD += 4
-            self.DEF += 10
-            self.phD = 4
-            super(Ulri, self).useSTAM(5)
-        elif(toggle == 1):
-            self.DEF -= 10
-            self.phD = 0
-   
+    def phalanx(self, target): 
+        target.bindD += 4
+        self.DEF += 10
+        self.phD = 4
+        super(Ulri, self).useSTAM(5)
+        
     def oblation(self, userParty):   
         for u in userParty:
             u.gainSTAM(10)
@@ -279,6 +287,7 @@ class Morgan(unit):
         super(Morgan, self).__init__(self, "Morgan", 1, 0, 70, 7, 7, 5, 10, 3, 10, 1, 2, 1)
         self.duo = False
         self.duoCheck(userParty)
+    
     def duoCheck(self, userParty):
         self.duo = False
         for u in userParty:
@@ -286,9 +295,11 @@ class Morgan(unit):
                 self.duo = True
                 self.SPD += 2
                 #Bind immune?
+    
     def danceKnives(self, target):
         target.HP -= (5*(self.STR + 10) - target.DEF)
         super(Morgan, self).useSTAM(5)
+    
     def danceDazzle(self, enemyParty):
         for e in enemyParty:
             e.HP -= 40
