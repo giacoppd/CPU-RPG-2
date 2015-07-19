@@ -41,7 +41,7 @@ class unit():
             self.HP = self.VIT  
     
     def levelUp(self):
-        ++self.level
+        self.level += 1
         self.xp = 0 #in theory right? wait shit what about overflow Joe questions.jpg
         self.VIT += VITup
         self.STR += STRup
@@ -51,13 +51,13 @@ class unit():
 		target.HP -= (self.STR - target.DEF)
 	def debuffdown():
 		if bindD > 0:
-			--bindD
+			bindD -= 1
 		if stunD > 0:
-			--stunD
+			stunD -= 1
 		if drainD > 0:
-			--drainD
+			drainD -= 1
 		if muteD > 0:
-			--muteD
+			muteD -= 1
 	def takeaction(i):
 		if i == 1:
 			attack(int(raw_input("Who do you want to attack? ")))
