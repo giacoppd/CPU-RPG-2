@@ -211,4 +211,39 @@ class JennyC(unit):
             u.DEF += amount
         super(JennyC, self).useSTAM(10)
 
+class Natasha(unit):
+   
+    def __init__(self):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Natasha, self).__init__(self, "Natasha", 1, 0, 105, 8, 5, 6, 10, 3, 20, 3, 2, 1)
+        self.qD = 0
+        self.qStack = 0
+    def qigong(self, toggle): #0 = use, 1 = reset
+        if(toggle == 0):
+            self.DEF += 2
+            self.qStack += 1
+            self.qD += 3
+            super(Natasha, self).useSTAM(3)
+        elif(toggle == 1):
+            self.DEF -= self.qStack*2
+            self.qD = 0
+            self.qStack = 0
+       else:
+           print "How did this happen to me? Natasha qigong"
+
+    def unrefinedKick(self, target):
+        amount = ((3*self.STR + 10) - target.DEF) 
+        target.HP -= amount
+        self.HP -= amount // 2
+        super(Natasha, self).useSTAM(3)
+
+    def gungirFlourish(self, target):
+        target.HP -= ((6*self.STR + 30) - target.DEF) 
+        super(Natasha, self).useSTAM(8)
+    
+    def gungirCombo(self, target):
+        target.HP -= ((8*(2*self.STR + 10) - target.DEF))
+        super(Natasha, self).useSTAM(10)
+    
+
 
