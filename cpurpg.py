@@ -1,8 +1,4 @@
-class spell():
-    def __init__(self, typ, aoe):
-      self.typ = typ #either phys, which is reduced by def + str, magic, reduced by def + int, pure, no reductions, or a non-damage
-      #TODO
-      #We need to feed it the list of spells joe has. It's going to suck. Just a lot of variety in here.
+
 
 class unit():
     def __init__(self, name, level, xp, VIT, STR, INT, DEF, STAM, SPD, VITup, STRup, INTup, DEFup):
@@ -64,14 +60,20 @@ class unit():
 
 
 class party():
+
     def __init__(self, A, B, C, D): #create a party and assign to it
         self.partylist = []
         self.partylist.append(A)
 	self.partylist.append(B)
 	self.partylist.append(C)
 	self.partylist.append(D)
-    def memSwap(self, slot, newMem): #slot is the position to change, newMem is the replacement char. Probs should check for already being in party
-        self.partylist[slot] = newMem
+
+    def memSwap(self, slot, roster, rosterSlot): #slot is the position to change, roster is the overall player roster, rosterSlot is their location in the roster
+        unit dummy = self.partylist[slot]
+        self.partylist[slot] = roster[rosterSlot]
+        roster[rosterSlot] = dummy
+#TODO make roster a thing overall. Just a global list of all the players not in the main party
+
     def statquery(self, num): #may or may not be useful
         form = '{stat:8} {val:8}'
         print form.format(stat = 'LEVEL', val = self.partylist[num].level)
@@ -82,7 +84,3 @@ class party():
         print form.format(stat = 'DEF', val = self.partylist[num].DEF)
         print form.format(stat = 'STAMINA', val = self.partylist[num].STAM)
         print form.format(stat = 'SPD', val = self.partylist[num].SPD)
-        #print form.format(stat = 'STUN', val = self.partylist[num]stun)
-        #print form.format(stat = 'DRAIN', val = self.partylist[num]drain)
-        #print form.format(stat = 'BIND', val = self.partylist[num]bind)
-        #print form.format(stat = 'MUTE', val = self.partylist[num]mute)
