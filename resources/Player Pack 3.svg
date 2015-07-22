@@ -13,7 +13,7 @@
    height="1000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="Player Pack 3.svg">
   <defs
      id="defs4" />
@@ -25,16 +25,16 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="1757.5641"
-     inkscape:cy="133.45384"
+     inkscape:cx="1866.8876"
+     inkscape:cy="173.85994"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1002"
-     inkscape:window-x="-32000"
-     inkscape:window-y="-32000"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1280"
+     inkscape:window-height="959"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -327,7 +327,7 @@
        y="271.64789" />
     <text
        xml:space="preserve"
-       style="font-size:14.02988052px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.02988052px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none"
        x="280.86746"
        y="282.88306"
        id="text3830-6-8-5"
@@ -377,7 +377,7 @@
          style="font-size:14.02988052px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
          id="tspan5032"><tspan
    style="fill:#660066;fill-opacity:1"
-   id="tspan12543">ROTC Drill (5)</tspan> - Increases the stamina of the target ally by five.</tspan><tspan
+   id="tspan12543">ROTC Drill (5)</tspan> - Increases the stamina of the target ally (not self) by five.</tspan><tspan
          sodipodi:role="line"
          x="280.86746"
          y="405.6445"
@@ -1123,7 +1123,7 @@
        y="271.64789" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none"
        x="1680.2695"
        y="283.44745"
        id="text3830-6-8-5-8"
@@ -1165,12 +1165,12 @@
    style="fill:#660066;fill-opacity:1"
    id="tspan13674">Dance of Dazing (5)</tspan> - Deals 40 <tspan
    style="fill:#b2b2b2;fill-opacity:1"
-   id="tspan13686">pure</tspan> damage to all enemy units, stunning</tspan><tspan
+   id="tspan13686">pure</tspan> damage to all enemy units (AoE), </tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="388.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan13684">the frontmost one for one turn.</tspan><tspan
+         id="tspan13684">stunning the frontmost one for one turn.</tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="405.94745"
@@ -1189,7 +1189,7 @@
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
          id="tspan13739"><tspan
    style="fill:#660000;fill-opacity:1"
-   id="tspan13741">3STR + 50</tspan> damage to all enemies. Upon cast, Rachel is swapped out.</tspan><tspan
+   id="tspan13741">3STR + 50</tspan> (AoE) damage to all enemies. Upon cast, Rachel is swapped out.</tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="458.44745"
