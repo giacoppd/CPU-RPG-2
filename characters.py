@@ -1,7 +1,7 @@
 from cpurpg import *
 #TODO Bad positional input return false shit
 #jenny C emboss?
-#buffsss???????????
+#buffsss??????????? return trigger variable to party to apply buff
 class Dom(unit):
 
     def __init__(self):
@@ -27,6 +27,7 @@ class Dom(unit):
              enemyParty[3].HP -= 30*charge
         else:
              print "How did this happen to me???? Dom gattle"
+             return False
         charge = 1
         super(Dom, self).useSTAM(8)
 
@@ -177,11 +178,19 @@ class JennyK(unit):
 
 class JennyC(unit):
     
+    embossD = 0
     def __init__(self):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(JennyC, self).__init__(self, "Jenny Chang", 1, 0, 60, 5, 6, 7, 10, 5, 10, 1, 2, 1)
         self.embossD = 0
-
+    
+    def debuffdown():
+		super(JennyC, self).debuffdown()
+		if (embossD > 0):
+			embossD -= 1
+			if(embossD == 0):
+			    return "emON"
+	
     def vitalize(self, userParty):
         for u in userParty:
             u.heal(self.INT + 5)
@@ -204,15 +213,13 @@ class JennyC(unit):
             target.bindD = 0
         else:
             print "How did this happen to me? jennyC remove"
+            return False
 
-    def emboss(self, userParty): #0 = on, 1 = off
-        if(toggle == 0):
-            amount = self.DEF
-        elif(toggle == 1):
-            amount = -self.DEF
+    def emboss(self, userParty): 
         for u in userParty:
-            u.DEF += amount
+            u.DEF += self.DEF
         super(JennyC, self).useSTAM(10)
+        return "emON"
 
 class Natasha(unit):
    
