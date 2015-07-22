@@ -25,7 +25,7 @@ def instance(userparty, baddyparty):
 		for person in allpeeps.partylist:
 			if x % (60 / person.spd) == 0:
 				q.put(person)
-		while (!q.empty())
+		while (q.empty() == false)
 			person = q.get()
 			if (person.stunD == 0 and person.HP > 0):
 				action = int(raw_input("What do you want to do?"))
