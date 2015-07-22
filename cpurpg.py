@@ -22,9 +22,10 @@ class unit():
         self.DEFup = DEFup
 
     def useSTAM(amount):
+		if self.STAM < amount:
+			print("not enough stamina to use ability")
+			return false;
         self.STAM -= amount
-        if (self.STAM < 0):
-            self.STAM = 0
 
     def gainSTAM(amount):
         self.STAM += amount
@@ -54,9 +55,17 @@ class unit():
 			drainD -= 1
 		if muteD > 0:
 			muteD -= 1
-	def takeaction(i):
+	def takeaction(i, baddyparty, userparty):
 		if i == 1:
-			attack(int(raw_input("Who do you want to attack? ")))
+			executed = false
+			while(!executed):
+				target = int(raw_input("Who do you want to attack? "))
+				if target == 1 or target == 2:
+					attack(baddyparty[i - 1])
+					executed = true;
+				else:
+					print("Invalid target")
+					
 
 
 class party():

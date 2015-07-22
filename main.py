@@ -2,20 +2,16 @@
 #Make this happen. For now, dummy shit. Combat? Turns? That speed thing?
 #Spells? A bloody interface?
 from cpurpg import *
+from characters import *
 from copy import deepcopy
 
-unitA = unit("A", 1, 0, 100, 5, 5, 5, 100, 5)
-unitB = unit("B", 1, 0, 100, 5, 5, 5, 100, 5)
-unitC = unit("C", 1, 0, 100, 5, 5, 5, 100, 5)
-unitD = unit("D", 1, 0, 100, 5, 5, 5, 100, 5)
+dom = Dom()
+woon = Yong()
+haley = Haley()
+nick = Nick()
 
-baddies1 = unit("Baddies", 1, 0, 10, 2, 2, 2, 10, 4)
-baddies2 = unit("Baddies", 1, 0, 10, 2, 2, 2, 10, 4)
-baddies3 = unit("Baddies", 1, 0, 10, 2, 2, 2, 10, 4)
-baddies4 = unit("Baddies", 1, 0, 10, 2, 2, 2, 10, 4)
+userparty = party(dom, woon, haley, nick)
 
-userparty = party(unitA, unitB, unitC, unitD)
-baddyparty = party(baddies1, baddies2, baddies3, baddies4)
 
 userParty.statquery(0)
 
