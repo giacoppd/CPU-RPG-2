@@ -21,24 +21,43 @@ class unit():
         self.INTup = INTup
         self.DEFup = DEFup
 
-    def useSTAM(amount):
+	#returns True if muted
+	def checkMute(self):
+		if muteD > 0:
+			return True
+		return False
+		
+	#returns True if bound
+	def checkBind(self):
+		if bindD > 0:
+			return True
+		return False
+		
+		
+    def useSTAM(self, amount):
 		if self.STAM < amount:
 			print("not enough stamina to use ability")
 			return False
 		self.STAM -= amount
+		return True
 
-    def gainSTAM(amount):
-        self.STAM += amount
-        if (self.STAM > 10):
-            self.STAM = 10    
+    def gainSTAM(self, amount):
+		if self.drainD == 0:
+			self.STAM += amount
+			if (self.STAM > 10):
+				self.STAM = 10    
+			return True
+		print("Failed: You are Drained")
+		return False
     
-    def heal(amount):
+    def heal(self, amount):
         if(self.HP <= 0):
             print "Can't heal outta death"
             return False
         self.HP += amount
         if (self.HP > self.VIT):
             self.HP = self.VIT  
+		return True
     
     def levelUp(self):
         self.level += 1
@@ -47,18 +66,22 @@ class unit():
         self.STR += STRup
         self.INT += INTup
         self.DEF += DEFup 
-	def attack(target):
-		target.HP -= (self.STR - target.DEF)
-	def debuffdown():
-		if bindD > 0:
-			bindD -= 1
-		if stunD > 0:
-			stunD -= 1
-		if drainD > 0:
-			drainD -= 1
-		if muteD > 0:
-			muteD -= 1
-	def takeaction(i, baddyparty, userparty):
+	def attack(self, target):
+		if not checkBind():
+			if self.STR - target.DEF > 0
+				target.HP -= (self.STR - target.DEF)
+			return True
+		return False
+	def debuffdown(self):
+		if self.bindD > 0:
+			self.bindD -= 1
+		if self.stunD > 0:
+			self.stunD -= 1
+		if self.drainD > 0:
+			self.drainD -= 1
+		if self.muteD > 0:
+			self.muteD -= 1
+	def takeaction(self, i, baddyparty, userparty):
 		if i == 1:
 			Nexecuted = True
 			while(Nexecuted):
