@@ -27,9 +27,9 @@ def instance(userparty, baddyparty):
 				q.put(person)
 		while (q.empty() == false)
 			person = q.get()
-			if (person.stunD == 0):
+			if (person.stunD == 0 and person.HP > 0):
 				action = int(raw_input("What do you want to do?"))
-				#execute action
+				person.takeaction(action, baddyparty, userparty)
 			person.debuffdown()
 			
 		
