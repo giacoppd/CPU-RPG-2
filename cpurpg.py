@@ -22,10 +22,10 @@ class unit():
         self.DEFup = DEFup
 
     def useSTAM(amount):
-	if self.STAM < amount:
-	    print("not enough stamina to use ability")
-	    return false;
-        self.STAM -= amount
+		if self.STAM < amount:
+			print("not enough stamina to use ability")
+			return False
+		self.STAM -= amount
 
     def gainSTAM(amount):
         self.STAM += amount
