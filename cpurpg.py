@@ -33,6 +33,9 @@ class unit():
             self.STAM = 10    
     
     def heal(amount):
+        if(self.HP <= 0):
+            print "Can't heal outta death"
+            return False
         self.HP += amount
         if (self.HP > self.VIT):
             self.HP = self.VIT  
