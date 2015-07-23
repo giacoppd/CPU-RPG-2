@@ -1,4 +1,3 @@
-DINK MEAMS
 --BOOK--
 
 1 - Statistics list
