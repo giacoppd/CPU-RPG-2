@@ -77,6 +77,9 @@ Deactivates channeling spells.
 	Turn - A tick during a cycle where a character may perform one action (Nicolas may perform 2). In general,
 	characters take their turn when TICK % SPD == 0.
 
+	Action - Something that is performed, as opposed to passive abilities or abilities that may be maintained.
+	Passive abilities and abilities that can be maintained do not consume a turn, while actions do.
+
 	Ally-inflicted - Abilities cast by an allied unit. These abilities typically do not interact with defense
 	values. Self-inflicted abilities fall in this category.
 	
@@ -98,14 +101,70 @@ Deactivates channeling spells.
 		Disabling - Abilities that inflict harmful effects.
 	
 		Debuff - Typically Enemy-inflicted abilities that are not Damage, Sapping, or Disabling.
+	
+	Unit - An object that can be attacked. A unit cannot gain XP or Level.
+	
+	Character - A unit with the ability to gain XP or Level, commonly represented by real-life people.
+
+	Fielded - A unit that is on the combat field (can be attacked).
+	
+	Reserve - To describe a unit that is off of the combat field. This unit cannot be attacked. The only
+	action that can be performed on this unit is to field it.
+
+	Swap - To exchange positions between a fielded and reserve unit. This is an action that consumes the
+	turn of the swapping unit. The fielded unit cannot perform an action on the same tick as the
+	swapping unit.
 
 Gonna work on this more 7/14/15, if you need clarification on something let me know below this line.
 
+2.2 MECHANICS
 
-12943234567uiy43234589098765435
+The game begins with a character selection input. From a the list of characters, eight (8) may be selected. These
+characters will be the only ones available for play by the player. Enemy parties controlled by a character
+(as opposed to a unit) cannot be one of the characters that are selected at the beginning of the game.
 
+After this selection is complete, the game goes into an intermediate phase. Here the player may configure the party
+orientation.
 
+(It is at this point I am unsure whether to have a set order of enemies to be fought, or a loosely random order of
+enemies. If the order were random, I would assign each enemy a value "Weight", and for every instance party.Weight
+would increase, meaning the enemies would get gradually stronger as the game progressed.)
 
+There is no map in this game, or rather assume the map is an infinite 1D line with infinite instances to go through
+(or a terminating line if the instances are preset)
+
+	BATTLE
+	
+	At the start of the game, each player-controlled character has five (5) stamina given to them. This value
+	does not reset after each battle, meaning that characters will remain depleted of stamina. Since most
+	instances are (should be, unless preset) followed by an intermediate phase, the player should choose to
+	defield their stamina-depleted units during the intermediate phase.
+
+	Each instance commences at tick 0, meaning the fastest characters take their turns first. As the instance
+	progresses the tick count increases to 59 and then recycles to 0.
+
+	As stated above, default spell damage is reduced by DEF + INT, while default physical damage is reduced by
+	DEF + STR. In addition to abilities, all characters have a "Basic Attack" ability that deals STR damage.
+	This ability costs no stamina but is considered an action (consuming a turn and preventing stamina from
+	being gained). This ability is reduced by DEF + STR.
+
+	During battle, buffs may be given to units. Buff duration is with respect to the buffed unit; faster units
+	will chew through a buff duration quicker than slower units. The same concept applies to disables, wherein
+	faster units will more quickly (relatively) recover from disables. If multiple disables of the same type
+	are used on a unit, the duration of the disable is refreshed. The durations are not added to one another.
+	Disables of different types can be stacked. Buffs are typically stackable (with durations that tick
+	independently) unless the buff is identical, in which case the duration is refreshed, or the number of
+	stacks is specified (for example, Dominic's Focus)
+	
+	When a unit dies in battle, the unit cannot be recovered with rare exceptions.
+
+	POST BATTLE
+	
+	When the instance is over, all characters retain the stamina and HP values they had at the end of the
+	battle. To prevent players from healing all of their characters to full HP/Stamina by leaving one enemy
+	unit alive -- the stamina and HP values are determined from the tick in the instance where the instance
+	could be ended. (Ask if need clarification). All debuffs and buffs are removed in the intermediate phase.
+	Abilities that require sustained stamina are turned off.	
 
 
 
