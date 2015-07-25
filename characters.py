@@ -81,7 +81,7 @@ class Yong(unit):
             return False
         if(super(Yong, self).useSTAM(10) == False):
             return False
-        target.HP -= (5*self.STR - target.DEF)
+        target.HP -= (5*self.STR - target.DEF - target.STR)
 
     def bloodTrans(partyList):
         if (super(Yong, self).checkMute() == True):
@@ -121,8 +121,7 @@ class Haley(unit):
         if(super(Haley, self).useSTAM(5) == False):
             return False
         for e in enemyParty:
-            e.HP -= (2*self.STR + 10 - e.DEF)    
-    
+             e.HP -= (2*self.STR + 10 - e.DEF - e.STR)        
     def mountainChisel(self, target):
         if (super(Haley, self).checkBind() == True):
             return False
@@ -135,8 +134,8 @@ class Haley(unit):
             return False
         if(super(Haley, self).useSTAM(3) == False):
             return False
-        enemyParty[0].HP -= (2*self.STR + 15 - enemyParty[0].DEF)    
-        enemyParty[1].HP -= (2*self.STR + 15 - enemyParty[1].DEF)    
+        enemyParty[0].HP -= (2*self.STR + 15 - enemyParty[0].DEF - enemyParty[0].STR)    
+        enemyParty[1].HP -= (2*self.STR + 15 - enemyParty[1].DEF - enemyParty[1].STR)    
 
 class Nick(unit):
    
@@ -155,7 +154,7 @@ class Nick(unit):
             return False
         if(super(Nick, self).useSTAM(4) == False):
             return False
-        target.HP -= ((self.STR + 30) - target.DEF)
+        target.HP -= ((self.STR + 30) - target.DEF - target.STR)
     
     def rally(self, target):
         if (super(Nick, self).checkMute() == True):
@@ -240,7 +239,7 @@ class JennyK(unit):
             return False
         if(super(JennyK, self).useSTAM(4) == False):
             return False
-        target.HP -= ((2*self.STR + 2*self.INT) - target.DEF) #Row reduction?
+        target.HP -= ((2*self.STR + 2*self.INT) - target.DEF - target.STR) #Row reduction?
 
     def ROTCDrill(self, tiarget):
         if (super(JennyK, self).checkBind) == True):
@@ -341,9 +340,9 @@ class Natasha(unit):
     def unrefinedKick(self, target):
         if (super(Natasha, self).checkBind) == True):
             return False
-        if(super(Natasha, self).useSTAM(3) == False):
+        if (super(Natasha, self).useSTAM(3) == False):
             return False
-        amount = ((3*self.STR + 10) - target.DEF) 
+        amount = ((3*self.STR + 10) - target.DEF - target.STR) 
         target.HP -= amount
         self.HP -= amount // 2
 
@@ -352,14 +351,14 @@ class Natasha(unit):
             return False
         if(super(Natasha, self).useSTAM(8) == False):
             return False
-        target.HP -= ((6*self.STR + 30) - target.DEF) 
+        target.HP -= ((8*(2*self.STR + 10 - target.DEF - target.STR)))
     
     def gungirCombo(self, target):
         if (super(Natasha, self).checkBind) == True):
             return False
         if(super(Natasha, self).useSTAM(10) == False):
             return False
-        target.HP -= ((8*(2*self.STR + 10) - target.DEF))
+        target.HP -= (8*((2*self.STR + 10) - (target.DEF + target.STR)))
 
 class Ulri(unit):
    
@@ -380,7 +379,7 @@ class Ulri(unit):
             return False
         if(super(Ulri, self).useSTAM(5) == False):
             return False
-        target.HP -= 2*(self.STR + self.INT)
+        target.HP -= (2*(self.STR + self.INT) - target.STR)
 
     def phalanx(self, target): 
         if (super(Ulri, self).checkBind) == True):
@@ -420,7 +419,7 @@ class Morgan(unit):
         if (super(Morgan, self).checkBind) == True):
             return False
         if (super(Morgan, self).useSTAM(5) == False):
-        target.HP -= (5*(self.STR + 10) - target.DEF)
+           target.HP -= (5*(self.STR + 10) - target.DEF)
     
     def danceDazzle(self, enemyParty):
         if (super(Morgan, self).checkBind) == True):
@@ -479,7 +478,41 @@ class Chris(unit):
         for u in userParty:
             u.muteD = 0
         
+class Matt(unit):
 
-        
+    def __init__(self, userParty):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Matt, self).__init__(self, "Matt", 1, 0, 75, 6, 7, 5, 10, 4, 10, 1, 2, 2)
+
+class Joe(unit):
+    
+    def __init__(self, userParty):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Joe, self).__init__(self, "Joe", 1, 0, 50, 4, 5, 3, 10, 2, 5, 1, 2, 1)
+    
+class Galen(unit):
+    
+    def __init__(self, userParty):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Galen, self).__init__(self, "Galen", 1, 0, 90, 8, 4, 4, 10, 4, 5, 1, 3, 1)
+
+class James(unit):
+    
+    def __init__(self, userParty):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(James, self).__init__(self, "James", 1, 0, 100, 7, 5, 6 10, 3, 15, 3, 1, 2)
+
+class Ashwin(unit):
+    
+    def __init__(self, userParty):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Ashwin, self).__init__(self, "Ashwin", 1, 0, 80, 6, 8, 6, 10, 3, 10, 2, 2, 1)
+
+class Kenji(unit):
+    
+    def __init__(self, userParty):
+        #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
+        super(Kenji, self).__init__(self, "Kenji", 1, 0, 80, 8, 8, 4, 10, 4, 15, 2, 2, 1)
+
 
 
