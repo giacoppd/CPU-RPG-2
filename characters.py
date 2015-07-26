@@ -507,7 +507,42 @@ class Ashwin(unit):
     def __init__(self, userParty):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Ashwin, self).__init__(self, "Ashwin", 1, 0, 80, 6, 8, 6, 10, 3, 10, 2, 2, 1)
+        self.imfD = 0 #Duration of buff immaculateForm
 
+    def debuffdown():
+        super(Ashwin, self).debuffdown()
+        if (imfD > 0):
+            imfD -= 1
+            if(imfD == 0):
+                self.STR -= self.STR // 3 #Example: 5 + 2.5 = 7 --> 7 - 7/3 = 5
+                self.INT -= self.INT // 3
+
+    def smash(self, target):
+        if (super(Ashwin, self).useSTAM(7) == False):
+            return False
+        if (super(Ashwin, self).checkBind() == True):
+            return False
+        target.HP -= (5*self.STR - target.DEF - target.STR)
+            
+    def logicBlast(self, target):
+        if (super(Ashwin, self).useSTAM(7) == False):
+            return False
+        if (super(Ashwin, self).checkMute() == True):
+            return False
+        target.HP -= (5*self.STR - target.DEF - target.INT)
+        
+    def immaculateForm(self):
+        if (super(Ashwin, self).useSTAM(10) == False):
+            return False
+        if (super(Ashwin, self).checkMute() == True):
+            return False
+        if self.imfD = 0:
+            self.STR += self.STR // 2 #rounded down
+            self.INT += self.INT // 2 #rounded down
+            self.imfD += 4
+        elif self.imfD > 0:
+            self.imfD == 4
+    
 class Kenji(unit):
     
     def __init__(self, userParty):
