@@ -24,13 +24,13 @@ class unit():
 	#returns True if muted
 	def checkMute(self):
 		if muteD > 0:
-			return True
+		    return True
 		return False
 		
 	#returns True if bound
 	def checkBind(self):
 		if bindD > 0:
-			return True
+		    return True
 		return False
 		
 		
