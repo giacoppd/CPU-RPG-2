@@ -309,8 +309,10 @@ class JennyC(unit):
         if (super(JennyC, self).useSTAM(10) == False):
             return False
         for u in userParty:
-            u.DEF += self.DEF
-        return "emON"
+            User.embossAmount = self.DEF #accessing the static variable in Unit
+            u.DEF += User.embossAmount
+            u.embossD = 2
+
 
 class Natasha(unit):
    
@@ -550,6 +552,8 @@ class Joe(unit):
             return False
         for e in enemyParty:
             e.STAM -= 3
+            if (e.STAM < 0):
+                e.STAM = 0
 
     def exhaust(self, target):
         if (super(Joe, self).useSTAM(4) == False):
@@ -599,7 +603,7 @@ class Galen(unit):
         target.bindD = 2
     
     def wellVersed(self, target):
-         if (super(Galen, self).useSTAM(8) == False):
+        if (super(Galen, self).useSTAM(8) == False):
             return False
         if (super(Galen, self).checkMute() == True):
             return False
@@ -631,6 +635,39 @@ class James(unit):
     def __init__(self, userParty):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(James, self).__init__(self, "James", 1, 0, 100, 7, 5, 6 10, 3, 15, 3, 1, 2)
+    
+    def greatPurge(self, target):
+        if (super(James, self).useSTAM(6) == False):
+            return False
+        target.bindD = 0
+        target.muteD = 0
+        target.drainD = 0
+    
+    def lessPurge(self, target):
+        if (super(James, self).useSTAM(3) == False):
+            return False
+        target.drainD = 0
+
+    def cleanse(self, target):
+        if (super(James, self).useSTAM(4) == False):
+            return False
+        if (super(James, self).checkMute() == True):
+            return False
+        target.heal(self.STR + 20)
+
+    def sacrifice(self, target):
+        if (super(James, self).useSTAM(10) == False):
+            return False
+        if(target.HP != 0):
+            return False
+        else:
+            target.HP = target.VIT
+            target.STAM = 10
+            target.bindD = 0
+            target.muteD = 0
+            target.stunD = 0
+            target.drainD = 0
+            self.HP = 0
 
 class Ashwin(unit):
     
@@ -678,6 +715,35 @@ class Kenji(unit):
     def __init__(self, userParty):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Kenji, self).__init__(self, "Kenji", 1, 0, 80, 8, 8, 4, 10, 4, 15, 2, 2, 1)
+    
+    def barrier(self, target):
+        if (super(Kenji, self).useSTAM(5) == False):
+            return False
+        if (super(Kenji, self).checkMute() == True):
+            return False
+        target.DEF += 5
+        target.barrD = 4
+
+    def CAD(self, enemyParty):                
+        if (super(Kenji, self).useSTAM(8) == False):
+            return False
+        if (super(Kenji, self).checkMute() == True):
+            return False
+        for e in enemyParty:
+            e.bindD = 3
+
+    def VocalBoom(self, enemyParty):                
+        if (super(Kenji, self).useSTAM(8) == False):
+            return False
+        if (super(Kenji, self).checkMute() == True):
+            return False
+        for e in enemyParty:
+            e.muteD = 3
+    
+    def friendship(self, userParty):
+        #TODO Triple swap shit
+
+
 
 
 

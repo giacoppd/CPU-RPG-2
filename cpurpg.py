@@ -1,6 +1,7 @@
 
 
-class unit():
+class unit():    
+    embossAmount = 0 #emboss amount, because it's easier than passing the party to get Jenny's DEF. It's static
     def __init__(self, name, level, xp, VIT, STR, INT, DEF, STAM, SPD, VITup, STRup, INTup, DEFup):
         self.level = level
 	self.name = name
@@ -20,35 +21,38 @@ class unit():
         self.STRup = STRup
         self.INTup = INTup
         self.DEFup = DEFup
+        self.embossD = 0 #emboss duration
+        self.barrD = 0 #barrier duration
 
 	#returns True if muted
-	def checkMute(self):
-		if muteD > 0:
-		    return True
-		return False
+    def checkMute(self):
+	if muteD > 0:
+    	    return True
+        return False
 		
 	#returns True if bound
-	def checkBind(self):
-		if bindD > 0:
-		    return True
-		return False
+    def checkBind(self):
+	if bindD > 0:
+	    return True
+	return False
 		
 		
     def useSTAM(self, amount):
-		if self.STAM < amount:
-			print("not enough stamina to use ability")
-			return False
-		self.STAM -= amount
-		return True
+	if self.STAM < amount:
+	    print("not enough stamina to use ability")
+	    return False
+	self.STAM -= amount
+	    return True
 
     def gainSTAM(self, amount):
-		if self.drainD == 0:
-			self.STAM += amount
-			if (self.STAM > 10):
-				self.STAM = 10    
-			return True
-		print("Failed: You are Drained")
-		return False
+	if self.drainD == 0:
+	    self.STAM += amount
+		if (self.STAM > 10):
+		    self.STAM = 10    
+		    return True
+        else:
+	    print("Failed: You are Drained")
+	        return False
     
     def heal(self, amount):
         if(self.HP <= 0):
@@ -74,13 +78,22 @@ class unit():
 		return False
 	def debuffdown(self):
 		if self.bindD > 0:
-			self.bindD -= 1
+		    self.bindD -= 1
 		if self.stunD > 0:
-			self.stunD -= 1
+		    self.stunD -= 1
 		if self.drainD > 0:
-			self.drainD -= 1
+		    self.drainD -= 1
 		if self.muteD > 0:
-			self.muteD -= 1
+	            self.muteD -= 1
+                if self.barrD > 0: #Kenji's barrier
+                    self.barrD -= 1
+                    if (self.barrD == 0):
+                        self.DEF -= 5
+                if self.embossD > 0: #Jenny's def buff
+                    self.embossD -= 1
+                    if (self.embossD == 0):
+                        self.DEF -= embossAmount
+
 	def takeaction(self, i, baddyparty, userparty):
 		if i == 1:
 			Nexecuted = True
