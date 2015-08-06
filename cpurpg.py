@@ -40,7 +40,7 @@ class unit():
 	    print("not enough stamina to use ability")
 	    return False
         else:
-    	self.STAM -= amount
+    	    self.STAM -= amount
 	    return True
 
     def gainSTAM(self, amount):
@@ -118,7 +118,8 @@ class party():
         self.partylist.append(D)
 
     def memSwap(self, slot, roster, rosterSlot): #slot is the position to change, roster is the overall player roster, rosterSlot is their location in the roster
-        unit dummy = self.partylist[slot]
+        dummy = unit('Dummy', 0,0,0,0,0,0,0,0,0,0,0,0)
+        dummy = self.partylist[slot]
         self.partylist[slot] = roster[rosterSlot]
         roster[rosterSlot] = dummy
 #TODO make roster a thing overall. Just a global list of all the players not in the main party

@@ -209,7 +209,7 @@ class Kath(unit):
         self.drainD = 9999
         self.stunD = 9999 #big numbers so she's down for the count
    
-   def fortressT(self): #TODO toggle takes 1 turn and no stam
+    def fortressT(self): #TODO toggle takes 1 turn and no stam
         if (super(Kath, self).useSTAM(6) == False):
             return False
         if(self.fort == False):
@@ -228,30 +228,30 @@ class JennyK(unit):
         self.block = False
     
     def block(self):
-        if (super(JennyK, self).checkBind) == True):
+        if (super(JennyK, self).checkBind() == True):
             return False
         if(super(JennyK, self).useSTAM(3) == False):
             return False
         self.block = True
     
     def piercingKick(self, target):
-        if (super(JennyK, self).checkBind) == True):
+        if (super(JennyK, self).checkBind() == True):
             return False
-        if(super(JennyK, self).useSTAM(4) == False):
+        if (super(JennyK, self).useSTAM(4) == False):
             return False
         target.HP -= ((2*self.STR + 2*self.INT) - target.DEF - target.STR) #Row reduction?
 
     def ROTCDrill(self, tiarget):
-        if (super(JennyK, self).checkBind) == True):
+        if (super(JennyK, self).checkBind() == True):
             return False
-        if(super(JennyK, self).useSTAM(5) == False):
+        if (super(JennyK, self).useSTAM(5) == False):
             return False
         target.gainSTAM(5)
     
     def artOfDeath(self, target):
         if (super(JennyK, self).checkMute() == True):
             return False
-        if(super(JennyK, self).useSTAM(10) == False):
+        if (super(JennyK, self).useSTAM(10) == False):
             return False
         target.HP -= (target.VIT - target.HP)
 
@@ -324,14 +324,14 @@ class Natasha(unit):
     
     def debuffdown():
 	super(Natasha, self).debuffdown()
-	    if (qD > 0):
-		qD -= 1
-		if(qD == 0):
-		    self.DEF -= self.qStack*2
-                    self.qStack = 0
+	if (qD > 0):
+	    qD -= 1
+	    if(qD == 0):
+		self.DEF -= self.qStack*2
+                self.qStack = 0
     
     def qigong(self):
-        if (super(Natasha, self).checkBind) == True):
+        if (super(Natasha, self).checkBind() == True):
             return False
         if(super(Natasha, self).useSTAM(3) == False):
             return False
@@ -340,7 +340,7 @@ class Natasha(unit):
         self.qD += 3
 
     def unrefinedKick(self, target):
-        if (super(Natasha, self).checkBind) == True):
+        if (super(Natasha, self).checkBind() == True):
             return False
         if (super(Natasha, self).useSTAM(3) == False):
             return False
@@ -349,14 +349,14 @@ class Natasha(unit):
         self.HP -= amount // 2
 
     def gungirFlourish(self, target):
-        if (super(Natasha, self).checkBind) == True):
+        if (super(Natasha, self).checkBind() == True):
             return False
         if(super(Natasha, self).useSTAM(8) == False):
             return False
         target.HP -= ((8*(2*self.STR + 10 - target.DEF - target.STR)))
     
     def gungirCombo(self, target):
-        if (super(Natasha, self).checkBind) == True):
+        if (super(Natasha, self).checkBind() == True):
             return False
         if(super(Natasha, self).useSTAM(10) == False):
             return False
@@ -377,14 +377,14 @@ class Ulri(unit):
 	        self.DEF -= DEF
 			
     def trueStrike(self, target):
-        if (super(Ulri, self).checkBind) == True):
+        if (super(Ulri, self).checkBind() == True):
             return False
         if(super(Ulri, self).useSTAM(5) == False):
             return False
         target.HP -= (2*(self.STR + self.INT) - target.STR)
 
     def phalanx(self, target): 
-        if (super(Ulri, self).checkBind) == True):
+        if (super(Ulri, self).checkBind() == True):
             return False
         if(super(Ulri, self).useSTAM(5) == False):
             return False
@@ -418,13 +418,13 @@ class Morgan(unit):
                 #Bind immune?
     
     def danceKnives(self, target):
-        if (super(Morgan, self).checkBind) == True):
+        if (super(Morgan, self).checkBind() == True):
             return False
         if (super(Morgan, self).useSTAM(5) == False):
            target.HP -= (5*(self.STR + 10) - target.DEF)
     
     def danceDazzle(self, enemyParty):
-        if (super(Morgan, self).checkBind) == True):
+        if (super(Morgan, self).checkBind() == True):
             return False
         if (super(Morgan, self).useSTAM(5) == False):
             return False
@@ -433,13 +433,13 @@ class Morgan(unit):
         enemyParty[0].stunD = 1
 
     def danceDeath(self, enemyParty, userParty, roster):
-        if (super(Morgan, self).checkBind) == True):
+        if (super(Morgan, self).checkBind() == True):
             return False
         if (self.duo == False):
             return False
         if (super(Morgan, self).useSTAM(10) == False):
             return False
-        for (e in enemyParty):
+        for e in enemyParty:
             e.HP -= (3*self.STR + 50) - (e.DEF + e.STR)
         
 
@@ -490,12 +490,12 @@ class Matt(unit):
 
     def debuffdown(self):
 	super(Matt, self).debuffdown()
-	    if (self.YOLOD > 0):
-		YOLOD -= 1
-		if(YOLOD == 0):
-		    self.DEF -= 5
-                    self.STR -= 5
-                    self.INT -= 5
+	if (self.YOLOD > 0):
+	    YOLOD -= 1
+	    if(YOLOD == 0):
+		self.DEF -= 5
+                self.STR -= 5
+                self.INT -= 5
 
     def debugg(self, target):
         if (super(Matt, self).useSTAM(5) == False):
@@ -634,7 +634,7 @@ class James(unit):
     
     def __init__(self, userParty):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
-        super(James, self).__init__(self, "James", 1, 0, 100, 7, 5, 6 10, 3, 15, 3, 1, 2)
+        super(James, self).__init__("James", 1, 0, 100, 7, 5, 6, 10, 3, 15, 3, 1, 2)
     
     def greatPurge(self, target):
         if (super(James, self).useSTAM(6) == False):
@@ -703,7 +703,7 @@ class Ashwin(unit):
             return False
         if (super(Ashwin, self).checkMute() == True):
             return False
-        if self.imfD = 0:
+        if (self.imfD == 0):
             self.STR += self.STR // 2 #rounded down
             self.INT += self.INT // 2 #rounded down
             self.imfD += 4
@@ -742,8 +742,4 @@ class Kenji(unit):
     
     def friendship(self, userParty):
         #TODO Triple swap shit
-
-
-
-
-
+        print("emmes")
