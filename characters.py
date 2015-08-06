@@ -483,8 +483,8 @@ class Matt(unit):
     def __init__(self, userParty):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Matt, self).__init__(self, "Matt", 1, 0, 75, 6, 7, 5, 10, 4, 10, 1, 2, 2)
-        self.YOLOD = 0
-        self.it = 0
+        self.YOLOD = 0#yolo duration
+        self.it = 0 #Iteration toggle
 
     def debuffdown(self):
 	super(Matt, self).debuffdown()
@@ -523,6 +523,7 @@ class Matt(unit):
         if (super(Matt, self).checkMute() == True):
             return False
         self.it = 1
+        #TODO Raw input stuff here
     
     def DDOS(self, target): 
         if (super(Matt, self).useSTAM(5) == False):
@@ -536,16 +537,45 @@ class Matt(unit):
         else:
             target.stunD = 1
         
-
-
-
-
 class Joe(unit):
     
     def __init__(self, userParty):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Joe, self).__init__(self, "Joe", 1, 0, 50, 4, 5, 3, 10, 2, 5, 1, 2, 1)
     
+    def melancholy(self, enemyParty):
+        if (super(Joe, self).useSTAM(4) == False):
+            return False
+        if (super(Joe, self).checkMute() == True):
+            return False
+        for e in enemyParty:
+            e.STAM -= 3
+
+    def exhaust(self, target):
+        if (super(Joe, self).useSTAM(4) == False):
+            return False
+        if (super(Joe, self).checkMute() == True):
+            return False
+        target.drainD = 3
+
+    def chaos(self, enemyParty):
+        if (super(Joe, self).useSTAM(6) == False):
+            return False
+        if (super(Joe, self).checkMute() == True):
+            return False
+        for e in enemyParty:
+            e.HP -= (3*self.INT + 20) - (e.INT + e.DEF)
+        self.stunD = 1
+
+    def bloodFlare(self, target):
+        if (super(Joe, self).useSTAM(4) == False):
+            return False
+        if (super(Joe, self).checkMute() == True):
+            return False
+        self.HP /= 2
+        target.HP -= (10*self.INT)
+
+
 class Galen(unit):
     
     def __init__(self, userParty):
