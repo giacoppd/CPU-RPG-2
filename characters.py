@@ -483,6 +483,62 @@ class Matt(unit):
     def __init__(self, userParty):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Matt, self).__init__(self, "Matt", 1, 0, 75, 6, 7, 5, 10, 4, 10, 1, 2, 2)
+        self.YOLOD = 0
+        self.it = 0
+
+    def debuffdown(self):
+	super(Matt, self).debuffdown()
+	    if (self.YOLOD > 0):
+		YOLOD -= 1
+		if(YOLOD == 0):
+		    self.DEF -= 5
+                    self.STR -= 5
+                    self.INT -= 5
+
+    def debugg(self, target):
+        if (super(Matt, self).useSTAM(5) == False):
+            return False
+        if (super(Matt, self).checkMute() == True):
+            return False
+        target.bindD = 0
+        target.muteD = 0
+        target.drainD = 0
+        if (self.it == 1):
+            target.stunD = 0
+            self.it = 0
+
+    def YOLO(self):
+        if (super(Matt, self).useSTAM(10) == False):
+            return False
+        if (super(Matt, self).checkMute() == True):
+            return False
+        self.YOLOD = 5
+        self.STR += 5 
+        self.INT += 5
+        self.DEF += 5
+    
+    def iter(self):
+        if (super(Matt, self).useSTAM(3) == False):
+            return False
+        if (super(Matt, self).checkMute() == True):
+            return False
+        self.it = 1
+    
+    def DDOS(self, target): 
+        if (super(Matt, self).useSTAM(5) == False):
+            return False
+        if (super(Matt, self).checkMute() == True):
+            return False
+        target.HP -= (3*self.INT) - (target.DEF + target.INT)
+        if (self.it == 1):
+            target.stunD = 3
+            self.it = 0
+        else:
+            target.stunD = 1
+        
+
+
+
 
 class Joe(unit):
     
