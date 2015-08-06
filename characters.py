@@ -581,6 +581,50 @@ class Galen(unit):
     def __init__(self, userParty):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Galen, self).__init__(self, "Galen", 1, 0, 90, 8, 4, 4, 10, 4, 5, 1, 3, 1)
+    
+    def bash(self, target):
+        if (super(Galen, self).useSTAM(8) == False):
+            return False
+        if (super(Galen, self).checkBind() == True):
+            return False
+        target.HP -= (2*self.STR - (target.DEF + target.STR))
+        target.stunD = 2
+
+    def serve(self, target): 
+        if (super(Galen, self).useSTAM(4) == False):
+            return False
+        if (super(Galen, self).checkBind() == True):
+            return False
+        target.HP -= (self.INT + self.STR - (target.DEF + target.STR))
+        target.bindD = 2
+    
+    def wellVersed(self, target):
+         if (super(Galen, self).useSTAM(8) == False):
+            return False
+        if (super(Galen, self).checkMute() == True):
+            return False
+        target.HP -= (2*self.INT - (target.DEF + target.INT))
+        target.muteD = 3
+    
+    def prep(self):
+        if (super(Galen, self).useSTAM(5) == False):
+            return False
+        if (super(Galen, self).checkMute() == True):
+            return False
+        self.DEF += self.INT
+        prepD = 1
+
+    def prepOFF(self): #turns prep off. not sure how to make it an option...
+        prepD = 0
+        self.DEF -= self.INT
+    
+    def debuffdown(self):
+	super(Galen, self).debuffdown()
+	if (self.prepD > 0):
+            if (super(Galen, self).useSTAM(2) == False):
+                prepD = 0
+                self.DEF -= self.INT
+
 
 class James(unit):
     
