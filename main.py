@@ -50,6 +50,30 @@ def partyaddition(party, newmeat):
 	    party.append(JennyK())
 	else if newmeat.lower().startswith("jenny c"):
 	    party.append(JennyC())
+	else if newmeat.lower().startswith("nat"):
+	    party.append(Natasha())
+	else if newmeat.lower().startswith("ulri"):
+	    party.append(Ulri())
+	else if newmeat.lower().startswith("mor"):
+	    party.append(Morgan())
+	else if newmeat.lower().startswith("rac"):
+	    party.append(Rachel())
+	else if newmeat.lower().startswith("chris"):
+	    party.append(Chris())
+	else if newmeat.lower().startswith("mat"):
+	    party.append(Matt())
+	else if newmeat.lower().startswith("joe"):
+	    party.append(Joe())
+	else if newmeat.lower().startswith("gal"):
+	    party.append(Galen())
+	else if newmeat.lower().startswith("jam"):
+	    party.append(James())
+	else if newmeat.lower().startswith("ash"):
+	    party.append(Ashwin())
+	else if newmeat.lower().startswith("ken"):
+	    party.append(Kenji())
+	else 
+	    print("your spelling skills could use a little work")
 	return party
 	
 #returns false if given player is already in a party, true otherwise

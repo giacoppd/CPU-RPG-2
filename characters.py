@@ -403,11 +403,10 @@ class Ulri(unit):
 
 class Morgan(unit):
    
-    def __init__(self, userParty):
+    def __init__(self):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Morgan, self).__init__(self, "Morgan", 1, 0, 70, 7, 7, 5, 10, 3, 10, 1, 2, 1)
         self.duo = False
-        self.duoCheck(userParty)
     
     def duoCheck(self, userParty):
         self.duo = False
@@ -482,7 +481,7 @@ class Chris(unit):
         
 class Matt(unit):
 
-    def __init__(self, userParty):
+    def __init__(self):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Matt, self).__init__(self, "Matt", 1, 0, 75, 6, 7, 5, 10, 4, 10, 1, 2, 2)
         self.YOLOD = 0#yolo duration
@@ -541,7 +540,7 @@ class Matt(unit):
         
 class Joe(unit):
     
-    def __init__(self, userParty):
+    def __init__(self):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Joe, self).__init__(self, "Joe", 1, 0, 50, 4, 5, 3, 10, 2, 5, 1, 2, 1)
     
@@ -582,7 +581,7 @@ class Joe(unit):
 
 class Galen(unit):
     
-    def __init__(self, userParty):
+    def __init__(self):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Galen, self).__init__(self, "Galen", 1, 0, 90, 8, 4, 4, 10, 4, 5, 1, 3, 1)
     
@@ -632,7 +631,7 @@ class Galen(unit):
 
 class James(unit):
     
-    def __init__(self, userParty):
+    def __init__(self):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(James, self).__init__("James", 1, 0, 100, 7, 5, 6, 10, 3, 15, 3, 1, 2)
     
@@ -671,7 +670,7 @@ class James(unit):
 
 class Ashwin(unit):
     
-    def __init__(self, userParty):
+    def __init__(self):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Ashwin, self).__init__(self, "Ashwin", 1, 0, 80, 6, 8, 6, 10, 3, 10, 2, 2, 1)
         self.imfD = 0 #Duration of buff immaculateForm
@@ -712,7 +711,7 @@ class Ashwin(unit):
     
 class Kenji(unit):
     
-    def __init__(self, userParty):
+    def __init__(self):
         #self, name,  level, xp,VIT,STR,INT,DEF,STAM,SPD,VITup, STRup, INTup, DEFup
         super(Kenji, self).__init__(self, "Kenji", 1, 0, 80, 8, 8, 4, 10, 4, 15, 2, 2, 1)
     
