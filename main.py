@@ -6,6 +6,7 @@ from characters import *
 from copy import deepcopy
 
 userparty = mainPartySetup(userparty)
+reserveparty = reservePartySetup(userparty, reserveparty)
 
 
 userParty.statquery(0)
@@ -30,10 +31,20 @@ def instance(userparty, baddyparty):
 def mainPartySetup(userparty):
     while len(userparty) < 4:
 		newmeat = raw_input("Which character do you want to select? ")
-		if partycheck(newmeat, userparty) == False):
-			break
+		if partycheck(newmeat, userparty) == False:
+		    break
 		userparty = partyaddition(userparty, newmeat)
 	return party(userparty)
+	
+def reservePartySetup(userparty, reserveparty):
+    while len(reserveparty) < 4:
+	    newmeat = raw_input("Which character do you want to select? ")
+		if partycheck(newmeat, userparty) == False:
+		    break
+		if partycheck(newmeat, reserveparty) == False:
+		    break
+		reserveparty = partyaddition(reserveparty, newmeat)
+	return reserveparty
 		
 def partyaddition(party, newmeat):
     if newmeat.lower().startswith("dom"):
