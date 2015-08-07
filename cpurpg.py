@@ -110,12 +110,9 @@ class unit():
 
 class party():
 
-    def __init__(self, A, B, C, D): #create a party and assign to it
+    def __init__(self, A): #create a party and assign to it
         self.partylist = []
-        self.partylist.append(A)
-        self.partylist.append(B)
-        self.partylist.append(C)
-        self.partylist.append(D)
+        self.partylist.extend(A)
 
     def memSwap(self, slot, roster, rosterSlot): #slot is the position to change, roster is the overall player roster, rosterSlot is their location in the roster
         dummy = unit('Dummy', 0,0,0,0,0,0,0,0,0,0,0,0)

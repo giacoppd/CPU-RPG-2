@@ -5,12 +5,7 @@ from cpurpg import *
 from characters import *
 from copy import deepcopy
 
-dom = Dom()
-woon = Yong()
-haley = Haley()
-nick = Nick()
-
-userparty = party(dom, woon, haley, nick)
+userparty = mainPartySetup(userparty)
 
 
 userParty.statquery(0)
@@ -32,5 +27,35 @@ def instance(userparty, baddyparty):
 				person.takeaction(action, baddyparty, userparty)
 			person.debuffdown()
 			
+def mainPartySetup(userparty):
+    while len(userparty) < 4:
+		newmeat = raw_input("Which character do you want to select? ")
+		if partycheck(newmeat, userparty) == False):
+			break
+		userparty = partyaddition(userparty, newmeat)
+	return party(userparty)
 		
+def partyaddition(party, newmeat):
+    if newmeat.lower().startswith("dom"):
+		party.append(Dom())
+    else if newmeat.lower().startswith("yong"):
+	    party.append(Yong())
+	else if newmeat.lower().startswith("hal"):
+	    party.append(Haley())
+	else if newmeat.lower().startswith("nic"):
+	    party.append(Nick())
+	else if newmeat.lower().startswith("kat"):
+	    party.append(Kath())
+	else if newmeat.lower().startswith("jenny k"):
+	    party.append(JennyK())
+	else if newmeat.lower().startswith("jenny c"):
+	    party.append(JennyC())
+	return party
 	
+#returns false if given player is already in a party, true otherwise
+def partycheck(player, party)
+    for member in userparty:
+	    if member.name.lower().startswith(player):
+		    print("Cloning technology ain't that advanced brother")
+			return False
+	return True
