@@ -13,7 +13,7 @@
    height="1000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="Unit Pack 1.svg">
   <defs
      id="defs4" />
@@ -25,13 +25,13 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="1806.7855"
+     inkscape:cx="1683.1551"
      inkscape:cy="778.02053"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1002"
+     inkscape:window-width="1280"
+     inkscape:window-height="959"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1" />
@@ -347,7 +347,7 @@
          x="280.86746"
          y="317.95776"
          style="font-size:14.02988052px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan6174"></tspan><tspan
+         id="tspan6174" /><tspan
          sodipodi:role="line"
          x="280.86746"
          y="335.49512"
@@ -1018,7 +1018,7 @@
          x="1680.2695"
          y="318.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan6739"></tspan><tspan
+         id="tspan6739" /><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="335.94745"
@@ -1028,7 +1028,7 @@
          x="1680.2695"
          y="353.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan6745"></tspan><tspan
+         id="tspan6745" /><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="370.94745"
@@ -1345,7 +1345,7 @@
        y="771.64746" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#660000;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala;"
        x="280.2695"
        y="783.04688"
        id="text3830-6-8-5-83"
@@ -1353,31 +1353,31 @@
          sodipodi:role="line"
          x="280.2695"
          y="783.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#660000;fill-opacity:1;"
          id="tspan7436"><tspan
-   style="fill:#660066;fill-opacity:1"
+   style="fill:#660000;fill-opacity:1;"
    id="tspan6934">Maul (5)</tspan> - Deals <tspan
-   style="fill:#660000;fill-opacity:1"
+   style="fill:#660000;fill-opacity:1;"
    id="tspan6946">2STR + 10</tspan> damage to target unit.</tspan><tspan
          sodipodi:role="line"
          x="280.2695"
          y="800.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#660000;fill-opacity:1;"
          id="tspan5048-65" /><tspan
          sodipodi:role="line"
          x="280.2695"
          y="818.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#660000;fill-opacity:1;"
          id="tspan5050-8" /><tspan
          sodipodi:role="line"
          x="280.2695"
          y="835.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#660000;fill-opacity:1;"
          id="tspan5036-2" /><tspan
          sodipodi:role="line"
          x="280.2695"
          y="853.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#660000;fill-opacity:1;"
          id="tspan5038-5" /></text>
     <g
        id="g4987-4"
@@ -1680,7 +1680,7 @@
          x="980.26959"
          y="800.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7173"></tspan><tspan
+         id="tspan7173" /><tspan
          sodipodi:role="line"
          x="980.26959"
          y="818.04688"
@@ -2016,7 +2016,7 @@
          x="1680.2697"
          y="800.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7349"></tspan><tspan
+         id="tspan7349" /><tspan
          sodipodi:role="line"
          x="1680.2697"
          y="818.04688"

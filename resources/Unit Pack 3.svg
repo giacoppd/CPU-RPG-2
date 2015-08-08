@@ -13,7 +13,7 @@
    height="1000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91pre4 r13712"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="Unit Pack 3.svg">
   <defs
      id="defs4" />
@@ -24,14 +24,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="1139.9085"
-     inkscape:cy="754.73439"
+     inkscape:zoom="0.47227564"
+     inkscape:cx="787.92314"
+     inkscape:cy="749.78914"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="999"
+     inkscape:window-width="1280"
+     inkscape:window-height="959"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1" />
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -339,7 +339,9 @@
          style="font-size:14.02988052px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
          id="tspan6177"><tspan
    style="fill:#660066;fill-opacity:1"
-   id="tspan6182">Strike (5)</tspan> - Deals 2STR damage to target unit.</tspan><tspan
+   id="tspan6182">Strike (5)</tspan> - Deals <tspan
+   style="fill:#660000;fill-opacity:1"
+   id="tspan4586">2STR</tspan> damage to target unit.</tspan><tspan
          sodipodi:role="line"
          x="280.86746"
          y="300.42041"
@@ -403,7 +405,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#367db2;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#996b99;fill-opacity:1;stroke:none;"
        x="845.08301"
        y="102.36218"
        id="text3830-7"
@@ -412,7 +414,7 @@
          id="tspan3832-3"
          x="845.08301"
          y="102.36218"
-         style="text-align:center;text-anchor:middle;fill:#996b99;fill-opacity:1">Soldier</tspan></text>
+         style="text-align:center;text-anchor:middle;fill:#996b99;fill-opacity:1;">Soldier</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666600;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -636,7 +638,7 @@
          id="tspan3832-14-31-4-2"
          x="963.6629"
          y="434.72632"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">12</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">9</tspan></text>
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect4850-5"
@@ -655,7 +657,11 @@
          x="980.26935"
          y="283.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7413">Strike (5) - Deals 2STR + 10 damage to target unit</tspan><tspan
+         id="tspan7413"><tspan
+   style="fill:#660066;fill-opacity:1"
+   id="tspan4528">Strike (5)</tspan> - Deals <tspan
+   style="fill:#660000;fill-opacity:1"
+   id="tspan4582">2STR + 20</tspan> damage to target unit.</tspan><tspan
          sodipodi:role="line"
          x="980.26935"
          y="300.94745"
@@ -665,49 +671,25 @@
          x="980.26935"
          y="318.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7417">Lunar Mystic (Passive) - Any unit that targets Lunar Hawk is afflicted</tspan><tspan
+         id="tspan8422">Heavy Armor (Passive) - DEF is doubled against physical damage sources.</tspan><tspan
          sodipodi:role="line"
          x="980.26935"
          y="335.94745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7419">with Mute for the following turn.</tspan><tspan
+         id="tspan5048-6" /><tspan
          sodipodi:role="line"
          x="980.26935"
          y="353.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan6540" /><tspan
+         id="tspan5050-4" /><tspan
          sodipodi:role="line"
          x="980.26935"
          y="370.94745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan6542"><tspan
-   style="fill:#404040;fill-opacity:1"
-   id="tspan7429">Blackeye (6)</tspan> - Deals 40 <tspan
-   style="fill:#b2b2b2;fill-opacity:1"
-   id="tspan8414">pure</tspan> damage to target unit with higher STR than</tspan><tspan
-         sodipodi:role="line"
-         x="980.26935"
-         y="388.44745"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8422">INT. To units with higher INT than STR, inflicts Mute for two turns.</tspan><tspan
-         sodipodi:role="line"
-         x="980.26935"
-         y="405.94745"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan5048-6" /><tspan
-         sodipodi:role="line"
-         x="980.26935"
-         y="423.44745"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan5050-4" /><tspan
-         sodipodi:role="line"
-         x="980.26935"
-         y="440.94745"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
          id="tspan5036-0" /><tspan
          sodipodi:role="line"
          x="980.26935"
-         y="458.44745"
+         y="388.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
          id="tspan5038-6" /></text>
     <g
@@ -778,7 +760,7 @@
          style="fill:#666600;fill-opacity:1">VIT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="1663.663"
        y="173.25639"
        id="text3830-6-2-2-7"
@@ -787,7 +769,7 @@
          id="tspan3832-14-3-3-8"
          x="1663.663"
          y="173.25639"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">55</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">80</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -802,7 +784,7 @@
          style="fill:#808080;fill-opacity:1">SPD</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#808080;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#808080;fill-opacity:1;stroke:none"
        x="1663.2059"
        y="523.42981"
        id="text3830-6-5-3-7"
@@ -811,7 +793,7 @@
          id="tspan3832-14-7-8-1"
          x="1663.2059"
          y="523.42981"
-         style="text-align:end;text-anchor:end;fill:#808080;fill-opacity:1">6</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#808080;fill-opacity:1">4</tspan></text>
     <path
        style="fill:#808080;fill-opacity:1;stroke:#4d4d4d;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m 2028.3077,67.534181 55,0 0,54.999999 -55,0 z"
@@ -954,7 +936,7 @@
          style="fill:#006666;fill-opacity:1">INT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="1663.663"
        y="347.62238"
        id="text3830-6-6-1-4"
@@ -963,7 +945,7 @@
          id="tspan3832-14-8-1-38"
          x="1663.663"
          y="347.62238"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">4</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">9</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006600;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1006,61 +988,64 @@
          x="1680.2695"
          y="283.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8428">Strike (5) - Deals 2STR damage to target unit.</tspan><tspan
+         id="tspan8428"><tspan
+   style="fill:#660066;fill-opacity:1"
+   id="tspan4546">Strike (5)</tspan> - Deals 2STR <tspan
+   style="fill:#b2b2b2;fill-opacity:1"
+   id="tspan4548">pure</tspan> damage to target unit.</tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="300.94745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8430" /><tspan
+         id="tspan4590" /><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="318.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8432">Electrostatic (Passive) - Any unit that targets Thunder Hawk is dealt</tspan><tspan
+         id="tspan4592">Talisman of Mitigation (Passive) - The Runic Soldier enters battle with a</tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="335.94745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8434">10 <tspan
-   style="fill:#b2b2b2;fill-opacity:1"
-   id="tspan8436">pure</tspan> damage.</tspan><tspan
+         id="tspan4594">magic-stopping protective talisman, which blocks up to 50 spell damage</tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="353.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8451" /><tspan
+         id="tspan4598">before being destroyed. Remainder spell damage and pure damage are</tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="370.94745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8455"><tspan
-   style="fill:#404040;fill-opacity:1"
-   id="tspan8457">Lightning Talon (6)</tspan> - The target unit is affected by Stun for one turn; also </tspan><tspan
+         id="tspan4602">ignored by the talisman. The talisman receives unreduced damage.</tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="388.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8465">deals 15 <tspan
-   style="fill:#b2b2b2;fill-opacity:1"
-   id="tspan8461">pure </tspan>damage to all enemy units.  </tspan><tspan
+         id="tspan8430" /><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="405.94745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan5048-9" /><tspan
+         id="tspan8465"> </tspan><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="423.44745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan5050-0" /><tspan
+         id="tspan5048-9" /><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="440.94745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan5036-7" /><tspan
+         id="tspan5050-0" /><tspan
          sodipodi:role="line"
          x="1680.2695"
          y="458.44745"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         id="tspan5036-7" /><tspan
+         sodipodi:role="line"
+         x="1680.2695"
+         y="475.94745"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
          id="tspan5038-8" /></text>
     <g
@@ -1107,7 +1092,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#367db2;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#996b99;fill-opacity:1;stroke:none;"
        x="143.9581"
        y="602.36176"
        id="text3830-3"
@@ -1116,7 +1101,7 @@
          id="tspan3832-9"
          x="143.9581"
          y="602.36176"
-         style="text-align:center;text-anchor:middle;fill:#996b99;fill-opacity:1">Cannibal</tspan></text>
+         style="text-align:center;text-anchor:middle;fill:#996b99;fill-opacity:1;">Cannibal</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666600;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1131,7 +1116,7 @@
          style="fill:#666600;fill-opacity:1">VIT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="263.66302"
        y="673.25598"
        id="text3830-6-2-2-1"
@@ -1140,7 +1125,7 @@
          id="tspan3832-14-3-3-82"
          x="263.66302"
          y="673.25598"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">90</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">80</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1283,7 +1268,7 @@
          style="fill:#660000;fill-opacity:1">STR</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="263.66302"
        y="760.48291"
        id="text3830-6-22-3-9"
@@ -1292,7 +1277,7 @@
          id="tspan3832-14-1-4-6"
          x="263.66302"
          y="760.48291"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">10</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">8</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1307,7 +1292,7 @@
          style="fill:#006666;fill-opacity:1">INT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="263.66302"
        y="847.62195"
        id="text3830-6-6-1-2"
@@ -1316,7 +1301,7 @@
          id="tspan3832-14-8-1-5"
          x="263.66302"
          y="847.62195"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">4</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">5</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006600;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1331,7 +1316,7 @@
          style="fill:#006600;fill-opacity:1">DEF</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="263.66302"
        y="934.72589"
        id="text3830-6-54-7-12"
@@ -1340,7 +1325,7 @@
          id="tspan3832-14-31-4-5"
          x="263.66302"
          y="934.72589"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">7</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">8</tspan></text>
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect4850-0"
@@ -1350,7 +1335,7 @@
        y="771.64746" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#b2b2b2;fill-opacity:1;stroke:none;stroke-opacity:1"
        x="280.2695"
        y="783.04688"
        id="text3830-6-8-5-83"
@@ -1358,75 +1343,46 @@
          sodipodi:role="line"
          x="280.2695"
          y="783.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7436">Flying (Passive) - This unit may not be the target of a physical attack.</tspan><tspan
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;stroke-opacity:1"
+         id="tspan4610"><tspan
+   style="fill:#660066;fill-opacity:1"
+   id="tspan4604">Rend (5)</tspan> - Deals <tspan
+   style="fill:#660000;fill-opacity:1"
+   id="tspan4616">6 * (STR + 5)</tspan> damage to target unit.</tspan><tspan
          sodipodi:role="line"
          x="280.2695"
          y="800.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8468">This ability is disabled when affected by Bind.</tspan><tspan
-         sodipodi:role="line"
-         x="280.2695"
-         y="818.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;stroke-opacity:1"
          id="tspan8472" /><tspan
          sodipodi:role="line"
          x="280.2695"
+         y="818.04688"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;stroke-opacity:1"
+         id="tspan4640">Cannibalization (Passive) - If an allied unit dies while Cannibal is fielded, he</tspan><tspan
+         sodipodi:role="line"
+         x="280.2695"
          y="835.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8474"><tspan
-   style="fill:#660066;fill-opacity:1"
-   id="tspan8482">Space Tear (6)</tspan> - Deals <tspan
-   style="fill:#660000;fill-opacity:1"
-   id="tspan8488">2STR + 30</tspan> damage to target unit, nflicting Drain</tspan><tspan
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;stroke-opacity:1"
+         id="tspan4644">recovers 40 health and permanently gains two STR. </tspan><tspan
          sodipodi:role="line"
          x="280.2695"
          y="853.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8480">for two turns.</tspan><tspan
-         sodipodi:role="line"
-         x="280.2695"
-         y="870.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8476" /><tspan
-         sodipodi:role="line"
-         x="280.2695"
-         y="888.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8498"><tspan
-   style="fill:#404040;fill-opacity:1"
-   id="tspan8510">Vitality Inversion (10)</tspan> - Sacrifice Void Eagle. Heal target ally or damage</tspan><tspan
-         sodipodi:role="line"
-         x="280.2695"
-         y="905.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8502">target enemy for the amount of health Void Eagle had missing upon</tspan><tspan
-         sodipodi:role="line"
-         x="280.2695"
-         y="923.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8504">being sacrificed. Damage is <tspan
-   style="fill:#b2b2b2;fill-opacity:1"
-   id="tspan8506">pure</tspan>. </tspan><tspan
-         sodipodi:role="line"
-         x="280.2695"
-         y="940.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#b2b2b2;fill-opacity:1;stroke:none;stroke-opacity:1"
          id="tspan5048-65" /><tspan
          sodipodi:role="line"
          x="280.2695"
-         y="958.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         y="870.54688"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#b2b2b2;fill-opacity:1;stroke:none;stroke-opacity:1"
          id="tspan5050-8" /><tspan
          sodipodi:role="line"
          x="280.2695"
-         y="975.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         y="888.04688"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#b2b2b2;fill-opacity:1;stroke:none;stroke-opacity:1"
          id="tspan5036-2" /><tspan
          sodipodi:role="line"
          x="280.2695"
-         y="993.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         y="905.54688"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#b2b2b2;fill-opacity:1;stroke:none;stroke-opacity:1"
          id="tspan5038-5" /></text>
     <g
        id="g4987-4"
@@ -1496,7 +1452,7 @@
          style="fill:#666600;fill-opacity:1">VIT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="963.66309"
        y="673.25598"
        id="text3830-6-2-2-6-6"
@@ -1505,7 +1461,7 @@
          id="tspan3832-14-3-3-0-1"
          x="963.66309"
          y="673.25598"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">30</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">105</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1648,7 +1604,7 @@
          style="fill:#660000;fill-opacity:1">STR</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="963.66309"
        y="760.48291"
        id="text3830-6-22-3-8-3"
@@ -1657,7 +1613,7 @@
          id="tspan3832-14-1-4-2-4"
          x="963.66309"
          y="760.48291"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">8</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">9</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1672,7 +1628,7 @@
          style="fill:#006666;fill-opacity:1">INT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="963.66309"
        y="847.62195"
        id="text3830-6-6-1-0-8"
@@ -1681,7 +1637,7 @@
          id="tspan3832-14-8-1-3-7"
          x="963.66309"
          y="847.62195"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">8</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">9</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006600;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1696,7 +1652,7 @@
          style="fill:#006600;fill-opacity:1">DEF</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="963.66309"
        y="934.72589"
        id="text3830-6-54-7-1-1"
@@ -1705,7 +1661,7 @@
          id="tspan3832-14-31-4-2-2"
          x="963.66309"
          y="934.72589"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">6</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">9</tspan></text>
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect4850-5-5"
@@ -1715,7 +1671,7 @@
        y="771.64746" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none"
        x="980.26959"
        y="783.04688"
        id="text3830-6-8-5-0-7"
@@ -1724,79 +1680,91 @@
          x="980.26959"
          y="783.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7691">Flying (Passive) - This unit may not be the target of a physical attack.</tspan><tspan
+         id="tspan4739">Offensive Formation (0) - While activated, all allied units gain two SPD.</tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="800.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8470">This ability is disabled when affected by Bind.</tspan><tspan
+         id="tspan7173" /><tspan
          sodipodi:role="line"
          x="980.26959"
          y="818.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7173" /><tspan
+         id="tspan8536">Defensive Formation (0) - While activated, all allied units gain five DEF.</tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="835.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8524">Divine (Passive) - Aside from <tspan
-   style="fill:#b2b2b2;fill-opacity:1"
-   id="tspan8532">pure</tspan> damage, all other damage sources are</tspan><tspan
+         id="tspan4826" /><tspan
          sodipodi:role="line"
          x="980.26959"
          y="853.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8536">reduced to five damage.</tspan><tspan
+         id="tspan4828">Only one formation can be active at a time, unless there are two or more</tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="870.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8538" /><tspan
+         id="tspan4830">Captains, in which case both formations can be active but formations of the</tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="888.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8540"><tspan
-   style="fill:#404040;fill-opacity:1"
-   id="tspan8544">Sanctum (6)</tspan> - Heals an allied unit for 40 health while inflicting stun for</tspan><tspan
+         id="tspan4832">same type cannot stack.</tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="905.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8542">one turn.</tspan><tspan
+         id="tspan4746" /><tspan
          sodipodi:role="line"
          x="980.26959"
          y="923.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8548" /><tspan
+         id="tspan8552"><tspan
+   style="fill:#660066;fill-opacity:1"
+   id="tspan4808">Bash (7)</tspan> - Stuns the target unit for two turns, dealing <tspan
+   style="fill:#660000;fill-opacity:1"
+   id="tspan4812">2STR + 20</tspan> damage.</tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="940.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8550">Soul Integration (10) - Sacrifice Holy Eagle. Refills target allied unit's</tspan><tspan
+         id="tspan4804" /><tspan
          sodipodi:role="line"
          x="980.26959"
          y="958.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8552">stamina and grants it +5STR, +5INT, and +5DEF.</tspan><tspan
+         id="tspan4816"><tspan
+   style="fill:#660066;fill-opacity:1"
+   id="tspan4810">Defend (7)</tspan> - The stamina cost is paid in advance. The next physical source of</tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="975.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan5048-6-7" /><tspan
+         id="tspan4822">damage is fully blocked (for an ability with multiple instances of damage,</tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="993.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan5050-4-8" /><tspan
+         id="tspan4824">the entire ability is blocked). </tspan><tspan
          sodipodi:role="line"
          x="980.26959"
          y="1010.5469"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan5036-0-7" /><tspan
+         id="tspan5048-6-7" /><tspan
          sodipodi:role="line"
          x="980.26959"
          y="1028.0469"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         id="tspan5050-4-8" /><tspan
+         sodipodi:role="line"
+         x="980.26959"
+         y="1045.5469"
+         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
+         id="tspan5036-0-7" /><tspan
+         sodipodi:role="line"
+         x="980.26959"
+         y="1063.0469"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
          id="tspan5038-6-3" /></text>
     <g
@@ -1843,7 +1811,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#996b99;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ad0000;fill-opacity:1;stroke:none;"
        x="1543.9583"
        y="602.36176"
        id="text3830-8-9"
@@ -1852,7 +1820,7 @@
          id="tspan3832-0-7"
          x="1543.9583"
          y="602.36176"
-         style="text-align:center;text-anchor:middle;fill:#996b99;fill-opacity:1">Redirector</tspan></text>
+         style="text-align:center;text-anchor:middle;fill:#ad0000;fill-opacity:1;">Redirector</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666600;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1867,7 +1835,7 @@
          style="fill:#666600;fill-opacity:1">VIT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="1663.6632"
        y="673.25598"
        id="text3830-6-2-2-7-4"
@@ -1876,7 +1844,7 @@
          id="tspan3832-14-3-3-8-3"
          x="1663.6632"
          y="673.25598"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">300</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">200</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -1891,7 +1859,7 @@
          style="fill:#808080;fill-opacity:1">SPD</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#808080;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#808080;fill-opacity:1;stroke:none"
        x="1663.2062"
        y="1020.2126"
        id="text3830-6-5-3-7-1"
@@ -1900,7 +1868,7 @@
          id="tspan3832-14-7-8-1-3"
          x="1663.2062"
          y="1020.2126"
-         style="text-align:end;text-anchor:end;fill:#808080;fill-opacity:1">10</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#808080;fill-opacity:1">0</tspan></text>
     <path
        style="fill:#808080;fill-opacity:1;stroke:#4d4d4d;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m 2028.3079,567.53374 55,0 0,55 -55,0 z"
@@ -2019,7 +1987,7 @@
          style="fill:#660000;fill-opacity:1">STR</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="1663.6632"
        y="760.48291"
        id="text3830-6-22-3-3-0"
@@ -2028,7 +1996,7 @@
          id="tspan3832-14-1-4-3-6"
          x="1663.6632"
          y="760.48291"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">26</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">0</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -2043,7 +2011,7 @@
          style="fill:#006666;fill-opacity:1">INT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="1663.6632"
        y="847.62195"
        id="text3830-6-6-1-4-0"
@@ -2052,7 +2020,7 @@
          id="tspan3832-14-8-1-38-0"
          x="1663.6632"
          y="847.62195"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">26</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">0</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006600;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
@@ -2067,7 +2035,7 @@
          style="fill:#006600;fill-opacity:1">DEF</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#666666;fill-opacity:1;stroke:none"
        x="1663.6632"
        y="934.72589"
        id="text3830-6-54-7-8-4"
@@ -2076,7 +2044,7 @@
          id="tspan3832-14-31-4-0-9"
          x="1663.6632"
          y="934.72589"
-         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">18</tspan></text>
+         style="text-align:end;text-anchor:end;fill:#666666;fill-opacity:1">0</tspan></text>
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect4850-6-5"
@@ -2086,7 +2054,7 @@
        y="771.64746" />
     <text
        xml:space="preserve"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;font-family:Nyala;-inkscape-font-specification:Nyala"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Nyala;-inkscape-font-specification:Nyala;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none"
        x="1680.2697"
        y="783.04688"
        id="text3830-6-8-5-8-6"
@@ -2095,73 +2063,46 @@
          x="1680.2697"
          y="783.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8656">Mythical (Passive) - This unit has a maximum stamina of 15.</tspan><tspan
+         id="tspan4834">Redirection (Passive) - All abilities targeted against allied units are instead</tspan><tspan
          sodipodi:role="line"
          x="1680.2697"
          y="800.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8568" /><tspan
+         id="tspan4852">targeted against the Redirector.</tspan><tspan
          sodipodi:role="line"
          x="1680.2697"
          y="818.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8570">Flying (Passive) - This unit may not be the target of a physical attack.</tspan><tspan
+         id="tspan4854" /><tspan
          sodipodi:role="line"
          x="1680.2697"
          y="835.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8554">This ability is disabled when affected by Bind.</tspan><tspan
+         id="tspan4856">Reflection (Passive) - Attackers of the Redirector are dealt twice the damage</tspan><tspan
          sodipodi:role="line"
          x="1680.2697"
          y="853.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan7349" /><tspan
+         id="tspan4858">dealt to the Redirector. Damage is <tspan
+   style="fill:#b2b2b2;fill-opacity:1"
+   id="tspan4860">pure</tspan>. In addition, all status effects are also</tspan><tspan
          sodipodi:role="line"
          x="1680.2697"
          y="870.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8630">Universal Obliteration (8) - Deals <tspan
-   style="fill:#006666;fill-opacity:1"
-   id="tspan8572">4INT</tspan> + <tspan
-   style="fill:#660000;fill-opacity:1"
-   id="tspan8578">4STR</tspan> damage to target unit,</tspan><tspan
+         id="tspan4919">reflected.</tspan><tspan
          sodipodi:role="line"
          x="1680.2697"
          y="888.04688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8638">inflicting Bind, Drain, and Mute for three turns.</tspan><tspan
+         id="tspan8568" /><tspan
          sodipodi:role="line"
          x="1680.2697"
          y="905.54688"
          style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8640" /><tspan
-         sodipodi:role="line"
-         x="1680.2697"
-         y="923.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8644">Irradiated Field (8) - Deals 20 <tspan
+         id="tspan8664">Passivation (Passive) - Deals 5 <tspan
    style="fill:#b2b2b2;fill-opacity:1"
-   id="tspan8650">pure</tspan> damage per turn to all enemy units.</tspan><tspan
-         sodipodi:role="line"
-         x="1680.2697"
-         y="940.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8648">Requires three stamina per turn to maintain.</tspan><tspan
-         sodipodi:role="line"
-         x="1680.2697"
-         y="958.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8660" /><tspan
-         sodipodi:role="line"
-         x="1680.2697"
-         y="975.54688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8662">Eternity (15) - Fenghuang is healed for the amount of health missing </tspan><tspan
-         sodipodi:role="line"
-         x="1680.2697"
-         y="993.04688"
-         style="font-size:14px;text-align:start;text-anchor:start;fill:#666666;fill-opacity:1"
-         id="tspan8664">from all enemies.</tspan></text>
+   id="tspan4844">pure</tspan> damage per turn to all enemy units.</tspan></text>
     <g
        id="g4987-15-7"
        transform="translate(1400.0004,499.99956)">
