@@ -20,7 +20,7 @@ the unit cannot continue to take turns (unless revived). HP is not passively reg
 has a specific spell that denotes it.
 
 STR - Primary attribute of physical abilities. All players have an innate attack action which deals STR.
-Physical abilties (denoted on cards with RED) are prevented with Bind. Their damage is inherently reduced 
+Physical abilities (denoted on cards with RED) are prevented with Bind. Their damage is inherently reduced 
 by STR + DEF.
 
 INT - Primary attribute of spells. Spells (denoted on cards with DARK GREY) are prevented with Mute.
